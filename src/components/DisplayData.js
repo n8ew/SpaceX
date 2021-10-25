@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useQuery } from '@apollo/client'
-import { GET_DATA } from '../dataQuery'
+import { GET_DATA } from '../utilitis/dataQuery'
 
 import Loading from './displayDataComponents/Loading'
 import Error from './displayDataComponents/Error'

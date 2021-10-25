@@ -5,7 +5,7 @@ import { RingLoader } from 'react-spinners'
 const Loading = () => {
     return (
         <OtherDisplay>
-            <RingLoader size={ 200 } />
+            <RingLoader color={ "#fff" } size={ 200 } />
         </OtherDisplay>
     )
 }

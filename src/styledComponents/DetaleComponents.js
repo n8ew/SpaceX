@@ -108,10 +108,10 @@ export const Button = styled.button`
 `
 export const Hover = styled.span`
     background-color: ${({ theme }) => theme.colors.pText };
-    bottom: -30px;
+    bottom: -100%;
     border-radius: 5px;
     font-size: 14px;
-    left: -300%;
+    left: -150%;
     padding: 5px;
     position: absolute;
     visibility: hidden;

@@ -1,7 +1,10 @@
 import React from 'react'
+import useWindowDimensions from '../../../utilitis/useWindowDimensions'
 import { DetaleStyled, Label, H2, H4, Button, Span, Hover } from '../../../styledComponents/DetaleComponents'
 
 const Detale = ({ data }) => {
+
+    const { width } = useWindowDimensions()
 
     return (
         <DetaleStyled>
@@ -19,7 +22,7 @@ const Detale = ({ data }) => {
             <div className="right">
                 <div className="launchDate">
                     <Label>launch date</Label>
-                    <H4 alignRight>{data.date}</H4>
+                    <H4 alignRight>{ width > 550 ? data.date : data.longDate}</H4>
                 </div>
                 <div className="launchSite">
                     <Label>launch site</Label>
