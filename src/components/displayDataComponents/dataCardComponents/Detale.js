@@ -1,10 +1,10 @@
 import React from 'react'
-import useWindowDimensions from '../../../utilitis/useWindowDimensions'
+import { useWindowWidth } from '../../../utilitis/useGetWindowWidth'
 import { DetaleStyled, Label, H2, H4, Button, Span, Hover } from '../../../styledComponents/DetaleComponents'
 
 const Detale = ({ data }) => {
 
-    const { width } = useWindowDimensions()
+    const width = useWindowWidth()
 
     return (
         <DetaleStyled>
