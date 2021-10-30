@@ -6,17 +6,17 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.sText}; 
+    border-bottom: 1px solid ${({ theme }) => theme.colors.sText};
 
     img {
-        width: 300px
+        width: 300px;
     }
 
     button {
         border: none;
         background-color: inherit;
         cursor: pointer;
-        color: ${({ theme }) => theme.colors.sText };
+        color: ${({ theme }) => theme.colors.sText};
         transition: color 0.2s ease;
     }
     button:hover {
@@ -29,7 +29,7 @@ export const Nav = styled.nav`
     @media (max-width: 550px) {
         padding: 0px 20px;
         img {
-            width: 200px
+            width: 200px;
         }
     }
-`
+`;

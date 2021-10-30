@@ -1,48 +1,48 @@
-export const getDate = dataString => {
-    const date = new Date( dataString )
-    const day = date.getDate()
-    let month ;
-    switch(date.getMonth()) {
+export const getDate = (dataString) => {
+    const date = new Date(dataString);
+    const day = date.getDate();
+    let month;
+    switch (date.getMonth()) {
         case 0:
-            month = "Jan"
-            break
+            month = "Jan";
+            break;
         case 1:
-            month = "Feb"
-            break
+            month = "Feb";
+            break;
         case 2:
-            month = "Mar"
-            break
+            month = "Mar";
+            break;
         case 3:
-            month = "Apr"
-            break
+            month = "Apr";
+            break;
         case 4:
-            month = "May"
-            break
+            month = "May";
+            break;
         case 5:
-            month = "Jun"
-            break
+            month = "Jun";
+            break;
         case 6:
-            month = "Jul"
-            break
+            month = "Jul";
+            break;
         case 7:
-            month = "Aug"
-            break
+            month = "Aug";
+            break;
         case 8:
-            month = "Sept"
-            break
+            month = "Sept";
+            break;
         case 9:
-            month = "Oct"
-            break
+            month = "Oct";
+            break;
         case 10:
-            month = "Nov"
-            break
+            month = "Nov";
+            break;
         case 11:
-            month = "Dec"
-            break
+            month = "Dec";
+            break;
         default:
-            break
+            break;
     }
-    
-    const year = date.getFullYear()
-    return `${day} ${month} ${year}`
-}
+
+    const year = date.getFullYear();
+    return `${day} ${month} ${year}`;
+};

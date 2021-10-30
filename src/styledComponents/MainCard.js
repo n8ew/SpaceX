@@ -1,5 +1,3 @@
 import styled from "styled-components";
 
-export const MainCard = styled.div`
-    
-`
+export const MainCard = styled.div``;

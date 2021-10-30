@@ -6,5 +6,5 @@ export const OtherDisplay = styled.div`
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center
-`
+    align-items: center;
+`;

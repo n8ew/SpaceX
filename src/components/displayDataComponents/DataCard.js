@@ -1,11 +1,10 @@
-import React from 'react'
-import { MainCard } from '../../styledComponents/MainCard'
-import { getDate } from '../../utilitis/getDate'
-import Detale from './dataCardComponents/Detale'
-import ShipsDispaly from './dataCardComponents/ShipsDispaly'
+import React from "react";
+import { MainCard } from "../../styledComponents/MainCard";
+import { getDate } from "../../utilitis/getDate";
+import Detale from "./dataCardComponents/Detale";
+import ShipsDispaly from "./dataCardComponents/ShipsDispaly";
 
-const DataCard = ({data}) => {
-
+const DataCard = ({ data }) => {
     const detaleData = {
         missionName: data.mission_name,
         rocketName: data.rocket.rocket_name,
@@ -16,14 +15,14 @@ const DataCard = ({data}) => {
         launchSiteLong: data.launch_site.site_name_long,
         pLink: data.links.article_link,
         sLink: data.links.video_link,
-    }
+    };
 
     return (
         <MainCard>
-            <Detale data={ detaleData } />
-            <ShipsDispaly data={ data.ships }/>
+            <Detale data={detaleData} />
+            <ShipsDispaly data={data.ships} />
         </MainCard>
-    )
-}
+    );
+};
 
-export default DataCard
+export default DataCard;

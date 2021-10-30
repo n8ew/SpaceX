@@ -11,9 +11,9 @@ export const GlobalStyle = createGlobalStyle`
 body{
     width: 100%;
     min-height: 100vh;
-    // background-image: linear-gradient(to bottom right, ${({ theme }) => theme.colors.bgTop} 10% , ${({ theme }) => theme.colors.bgBottom });
-    background-image: radial-gradient(circle at bottom right, ${({ theme }) => theme.colors.bgBottom} 10% , ${({ theme }) => theme.colors.bgTop });
+    // background-image: linear-gradient(to bottom right, ${({ theme }) => theme.colors.bgTop} 10% , ${({ theme }) => theme.colors.bgBottom});
+    background-image: radial-gradient(circle at bottom right, ${({ theme }) => theme.colors.bgBottom} 10% , ${({ theme }) => theme.colors.bgTop});
     font-family: 'Roboto', sans-serif;
 }
 
-`
+`;

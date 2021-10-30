@@ -1,14 +1,15 @@
 import DisplayData from "./components/DisplayData";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from './styledComponents/GlobalStyles'
-import { theme } from './styledComponents/theme'
+import { GlobalStyle } from "./styledComponents/GlobalStyles";
+import { theme } from "./styledComponents/theme";
 
 function App() {
-
+    const name = "bob";
+    const surname = "Doe";
 
     return (
         <>
-            <ThemeProvider theme = { theme }>
+            <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <DisplayData />
             </ThemeProvider>
