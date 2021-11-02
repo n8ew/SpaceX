@@ -2,7 +2,19 @@ import React from "react";
 import { Nav } from "../../styledComponents/Navbar.styled";
 import logo from "../../img/logo.png";
 
-const Navbar = ({ handeler }) => {
+interface HandelerTypes {
+    current: number;
+    maxIndex: number;
+    addToIndex: () => void;
+    subtractFromCurrentIndex: () => void;
+    setToStart: () => void;
+    setToEnd: () => void;
+}
+interface Handeler {
+    handeler: HandelerTypes;
+}
+
+const Navbar = ({ handeler }: Handeler) => {
     const handleBack = () => {
         if (handeler.current === 0) {
             return handeler.setToEnd();

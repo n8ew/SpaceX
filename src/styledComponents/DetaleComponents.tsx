@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+interface SpanInterface {
+    readonly success?: boolean;
+}
+interface H4Interface {
+    readonly alignRight?: boolean;
+    readonly cursor?: number;
+}
+
 export const DisplayWrapper = styled.div`
     width: 60%;
     margin: auto;
@@ -50,7 +58,7 @@ export const H2 = styled.h2`
         font-size: 34px;
     }
 `;
-export const Span = styled.span`
+export const Span = styled.span<SpanInterface>`
     background-color: ${({ success, theme }) => (success ? theme.colors.rSuccess : theme.colors.rFaile)};
     border-radius: 5px;
     color: ${({ theme }) => theme.colors.tText};
@@ -59,7 +67,7 @@ export const Span = styled.span`
     padding: 5px;
     text-transform: uppercase;
 `;
-export const H4 = styled.h4`
+export const H4 = styled.h4<H4Interface>`
     color: ${({ theme }) => theme.colors.pText};
     cursor: ${({ cursor }) => cursor && "default"};
     font-size: 18px;

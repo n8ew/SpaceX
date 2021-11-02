@@ -2,8 +2,13 @@ import React from "react";
 import ShipCard from "./ShipCard";
 import { ShipsWrapper, ShipsSection } from "../../../styledComponents/ShipsComponents.styled";
 import { Label } from "../../../styledComponents/DetaleComponents";
+import { Ship } from "../../../utilitis/dataInterface";
 
-const ShipsDispaly = ({ data }) => {
+interface DataInterface {
+    data: Ship[];
+}
+
+const ShipsDispaly = ({ data }: DataInterface) => {
     const noShips = (
         <ShipsSection>
             <Label>There is no ships to dispaly</Label>

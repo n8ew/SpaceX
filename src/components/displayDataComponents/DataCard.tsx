@@ -1,10 +1,15 @@
 import React from "react";
 import { MainCard } from "../../styledComponents/MainCard";
 import { DateTime } from "luxon";
+import { Data } from "../../utilitis/dataInterface";
 import Detale from "./dataCardComponents/Detale";
 import ShipsDispaly from "./dataCardComponents/ShipsDispaly";
 
-const DataCard = ({ data }) => {
+interface DataInterface {
+    data: Data;
+}
+
+const DataCard = ({ data }: DataInterface) => {
     const detaleData = {
         missionName: data.mission_name,
         rocketName: data.rocket.rocket_name,

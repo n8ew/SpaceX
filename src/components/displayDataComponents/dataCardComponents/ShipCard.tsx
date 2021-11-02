@@ -1,7 +1,12 @@
 import React from "react";
 import { Shipcard, Image, CardTitle, ShipDetale, Row, RowLabel, RowContent } from "../../../styledComponents/ShipsComponents.styled";
+import { Ship } from "../../../utilitis/dataInterface";
 
-const ShipCard = ({ data }) => {
+interface DataInterface {
+    data: Ship;
+}
+
+const ShipCard = ({ data }: DataInterface) => {
     return (
         <Shipcard>
             <div className="top">

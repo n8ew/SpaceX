@@ -2,7 +2,22 @@ import React from "react";
 import { useWindowWidth } from "../../../utilitis/useGetWindowWidth";
 import { DetaleStyled, Label, H2, H4, Button, Span, Hover } from "../../../styledComponents/DetaleComponents";
 
-const Detale = ({ data }) => {
+interface Data {
+    missionName: string;
+    rocketName: string;
+    landSuccess: boolean;
+    date: string;
+    longDate: string;
+    launchSite: string;
+    launchSiteLong: string;
+    pLink: string;
+    sLink: string;
+}
+interface DataInterface {
+    data: Data;
+}
+
+const Detale = ({ data }: DataInterface) => {
     const width = useWindowWidth();
 
     return (
@@ -29,7 +44,7 @@ const Detale = ({ data }) => {
                 </div>
                 <div className="launchSite">
                     <Label>launch site</Label>
-                    <H4 className="hover" cursor="true" alignRight>
+                    <H4 className="hover" cursor={1} alignRight>
                         {data.launchSite}
                     </H4>
                     <Hover>{data.launchSiteLong}</Hover>
