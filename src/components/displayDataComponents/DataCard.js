@@ -1,6 +1,6 @@
 import React from "react";
 import { MainCard } from "../../styledComponents/MainCard";
-import { getDate } from "../../utilitis/getDate";
+import { DateTime } from "luxon";
 import Detale from "./dataCardComponents/Detale";
 import ShipsDispaly from "./dataCardComponents/ShipsDispaly";
 
@@ -9,7 +9,7 @@ const DataCard = ({ data }) => {
         missionName: data.mission_name,
         rocketName: data.rocket.rocket_name,
         landSuccess: data.rocket.first_stage.cores[0].land_success,
-        date: getDate(data.launch_date_local),
+        date: DateTime.fromISO(data.launch_date_local).toLocaleString(DateTime.DATE_MED),
         longDate: data.launch_date_local,
         launchSite: data.launch_site.site_id.split("_").join(" "),
         launchSiteLong: data.launch_site.site_name_long,

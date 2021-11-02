@@ -4,9 +4,6 @@ import { GlobalStyle } from "./styledComponents/GlobalStyles";
 import { theme } from "./styledComponents/theme";
 
 function App() {
-    const name = "bob";
-    const surname = "Doe";
-
     return (
         <>
             <ThemeProvider theme={theme}>
